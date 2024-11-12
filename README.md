@@ -24,15 +24,13 @@ If a request arrives for data stored locally, the kernel module calls on a Rust-
 
 This project provides a robust, modular DHT implementation with efficient routing and safe, manageable storage, suited for distributed data access without centralization.
 
-# Roadmap for Implementing a Distributed Hash Table (DHT) System
+# Roadmap for Implementing
 This project will start with a full userspace implementation to establish and test core functionality. Once stable, the routing component will be transitioned to the kernel for improved performance.
 
 ### Phase 1: Userspace Implementation
 - **Routing Module:** Implement Rust's core DHT routing logic, including node communication and efficient key-based lookups.
 - **Storage Module:** Build a storage layer to manage data, integrated with the routing module.
-- **Testing:** Deploy and test the complete DHT in userspace, to ensure reliable data routing and retrieval.
 
 ### Phase 2: Kernel Transition for Routing
 - **Kernel Routing Module:** Move the routing logic to a Linux kernel module, allowing for low-latency packet handling.
 - **Kernel-Userspace Integration:** Connect the kernel routing module with the userspace storage layer to complete a hybrid DHT system.
-- **Final Testing:** Test the full system for stability and performance, leveraging the kernel’s speed for routing with userspace data management.
