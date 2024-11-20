@@ -1,3 +1,5 @@
+[![Build Status](https://github.com/aabolfazl/kdht/actions/workflows/rust.yml/badge.svg)](https://github.com/aabolfazl/kdht/actions/workflows/rust.yml)
+
 # DHT KernelSpace Routing with Userspace Storage(Rust)
 
 ## Overview

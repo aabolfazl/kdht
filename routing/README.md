@@ -1,7 +1,5 @@
 # Routing Module:
 
-[![Build Status](https://github.com/aabolfazl/kdht/actions/workflows/rust.yml/badge.svg)](https://github.com/aabolfazl/kdht/actions/workflows/rust.yml)
-
 Implement Rust's core DHT routing logic, including node communication and efficient key-based lookups.
 
 Here’s an overview of the current layers:
