@@ -1,4 +1,4 @@
-name: Build and Test Rust Project
+name: Build and Test Rust Project in Routing
 
 on:
   push:
@@ -23,8 +23,10 @@ jobs:
       with:
         rust-version: stable
 
-    - name: Build
+    - name: Navigate to Routing Directory and Build
+      working-directory: routing
       run: cargo build --verbose
 
-    - name: Run tests
+    - name: Navigate to Routing Directory and Run Tests
+      working-directory: routing
       run: cargo test --verbose
